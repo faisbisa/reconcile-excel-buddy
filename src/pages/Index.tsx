@@ -9,7 +9,7 @@ import DataPreview from '@/components/DataPreview';
 import ReconciliationResults from '@/components/ReconciliationResults';
 import { FileData, SheetData, parseExcelFile, findCommonColumns, reconcileData, ReconciliationResult } from '@/utils/excelUtils';
 import { toast } from 'sonner';
-import { Compare, Excel } from 'lucide-react';
+import { FileSpreadsheet, DiffIcon } from 'lucide-react';
 
 const Index = () => {
   const [file1, setFile1] = useState<File | null>(null);
@@ -131,7 +131,7 @@ const Index = () => {
     <div className="container mx-auto py-8 px-4">
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-bold mb-2 flex items-center justify-center gap-2">
-          <Excel className="h-8 w-8 text-blue-500" />
+          <FileSpreadsheet className="h-8 w-8 text-blue-500" />
           Excel Reconciliation Buddy
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -256,7 +256,7 @@ const Index = () => {
                 className="px-8"
               >
                 {isLoading ? "Processing..." : "Reconcile Data"}
-                {!isLoading && <Compare className="ml-2 h-4 w-4" />}
+                {!isLoading && <DiffIcon className="ml-2 h-4 w-4" />}
               </Button>
             </div>
           </CardContent>
