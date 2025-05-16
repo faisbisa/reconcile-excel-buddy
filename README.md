@@ -71,3 +71,40 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+**Step to develop this system :
+**
+Download kode sumber dari project ini atau buat repositori baru dengan mengkloning kode ini.
+
+Pastikan Anda memiliki Node.js dan npm (atau yarn) terinstal di komputer Anda.
+
+Instal dependensi yang dibutuhkan. Project ini menggunakan beberapa dependensi utama:
+
+React
+TypeScript
+Vite
+shadcn/ui untuk komponen UI
+Tailwind CSS untuk styling
+xlsx untuk mengolah file Excel
+lucide-react untuk ikon
+Script penting - Pastikan Anda memiliki tag script berikut di file index.html:
+
+
+<script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+Script ini diperlukan untuk fitur "Select" (jika Anda menggunakan Lovable).
+
+Setup project:
+
+
+# Mengkloning repositori (jika Anda punya URL Git-nya)
+git clone <URL_GIT_ANDA>
+
+# Masuk ke direktori project
+cd <NAMA_DIREKTORI_PROJECT>
+
+# Instal dependensi
+npm install
+
+# Jalankan server pengembangan dengan auto-reloading
+npm run dev
+Akses aplikasi melalui browser, biasanya di http://localhost:8080 (atau port yang ditentukan dalam konfigurasi).
